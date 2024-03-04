@@ -1,0 +1,20 @@
+{
+  "name": "cicd_with_github_actions_and_docker",
+  "version": "1.0.0",
+  "description": "CICD_with_Github_Actions_and_Docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrinmoy32/CICD_with_Github_Actions_and_Docker.git"
+  },
+  "keywords": [],
+  "author": "Mrinmoy Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrinmoy32/CICD_with_Github_Actions_and_Docker/issues"
+  },
+  "homepage": "https://github.com/mrinmoy32/CICD_with_Github_Actions_and_Docker#readme"
+}
