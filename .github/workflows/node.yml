@@ -26,7 +26,7 @@ jobs:
     - run: docker pull mongo
 
     - name: Run Docker Mongo Container
-    - run: docker conatiner run --name mydatabase --publish 27017:27017 -d mongo 
+    - run: docker container run --name mydatabase --publish 27017:27017 -d mongo 
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
