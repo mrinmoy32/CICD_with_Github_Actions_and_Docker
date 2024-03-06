@@ -7,11 +7,11 @@ const dbName = 'mydatabase'
 let usersCollection:Collection<User>;
 
 const client = new MongoClient(dbUri, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-    }
+    // serverApi: {
+    //     version: ServerApiVersion.v1,
+    //     strict: true,
+    //     deprecationErrors: true,
+    // }
 })
 
 export async function connect() {
@@ -20,7 +20,7 @@ export async function connect() {
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
         const dataBase = client.db(dbName);
-        usersCollection = dataBase.collection<User>('users')
+        usersCollection = dataBase.collection<User>('users');
     } catch (error) {
         console.error(error)
     }
